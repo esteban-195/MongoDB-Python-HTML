@@ -90,6 +90,10 @@ def registrar_usuario():
 
     return jsonify({"mensaje": "Usuario registrado correctamente"}), 201
 
+@app.route("/mostrar_libros")
+def mostrar_libros():
+    libros = list(mongo.db.libro.find({}, {"_id": 0}))
+    return render_template("mostrar_libros.html", libros=libros)
 
 
 # Iniciar Flask
