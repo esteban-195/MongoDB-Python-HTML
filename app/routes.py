@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request, render_template
-from app.config import db
+from app import mongo
 
 app = Flask(__name__)
 

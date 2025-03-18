@@ -7,12 +7,12 @@ app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb://localhost:27017/biblioteca"
 mongo = PyMongo(app)
 
+# @app.route("/")
+# def home():
+#     return "¡BIENVENIDO A LA BIBLIOTECA!"
+
 @app.route("/")
 def home():
-    return "¡La API de la biblioteca está funcionando!"
-
-@app.route("/web")
-def web():
     return render_template("index.html")
 
 # Agregar un libro
@@ -34,7 +34,7 @@ def agregar_libro():
         "ejemplares_disponibles": int(cantidad)
     })
 
-    return redirect(url_for("web"))
+    return redirect(url_for("home"))
 
 # Actualizar un libro
 @app.route("/actualizar_libro", methods=["POST"])
@@ -56,7 +56,7 @@ def actualizar_libro():
     if actualizacion:
         mongo.db.libro.update_one({"titulo": titulo}, {"$set": actualizacion})
 
-    return redirect(url_for("web"))
+    return redirect(url_for("home"))
 
 # Eliminar un libro
 @app.route("/eliminar_libro", methods=["POST"])
@@ -65,7 +65,7 @@ def eliminar_libro():
 
     mongo.db.libro.delete_one({"titulo": titulo})
 
-    return redirect(url_for("web"))
+    return redirect(url_for("home"))
 
 # Obtener todos los libros
 @app.route("/libros", methods=["GET"])
@@ -73,5 +73,26 @@ def obtener_libros():
     libros = list(mongo.db.libro.find({}, {"_id": 0}))
     return jsonify(libros)
 
+# Ruta para registrar usuarios
+@app.route("/registrar_usuario", methods=["POST"])
+def registrar_usuario():
+    data = request.form
+
+    if not data.get("nombre") or not data.get("email") or not data.get("telefono"):
+        return jsonify({"error": "Faltan datos"}), 400
+
+    nuevo_usuario = {
+        "nombre": data["nombre"],
+        "email": data["email"],
+        "telefono": data["telefono"]
+    }
+    mongo.db.usuarios.insert_one(nuevo_usuario)
+
+    return jsonify({"mensaje": "Usuario registrado correctamente"}), 201
+
+
+
+# Iniciar Flask
 if __name__ == "__main__":
     app.run(debug=True)
+
