@@ -4,8 +4,9 @@ from flask_pymongo import PyMongo
 app = Flask(__name__)
 
 # Configuración de MongoDB
-app.config["MONGO_URI"] = "mongodb://localhost:27017/biblioteca"
+app.config["MONGO_URI"] = "mongodb://localhost:27017/Biblioteca01"
 mongo = PyMongo(app)
+
 
 # @app.route("/")
 # def home():
@@ -86,7 +87,7 @@ def registrar_usuario():
         "email": data["email"],
         "telefono": data["telefono"]
     }
-    mongo.db.usuarios.insert_one(nuevo_usuario)
+    mongo.db.usuario.insert_one(nuevo_usuario)
 
     return jsonify({"mensaje": "Usuario registrado correctamente"}), 201
 
@@ -95,6 +96,11 @@ def mostrar_libros():
     libros = list(mongo.db.libro.find({}, {"_id": 0}))
     return render_template("mostrar_libros.html", libros=libros)
 
+@app.route('/mostrar_usuarios')
+def mostrar_usuarios():
+    usuarios = list(mongo.db.usuario.find({}, {"_id": 1, "nombre": 1, "email": 1, "telefono": 1, "prestamos_activos": 1, "reservas_activas": 1}))
+    
+    return render_template('mostrar_usuarios.html', usuarios=usuarios)
 
 # Iniciar Flask
 if __name__ == "__main__":
