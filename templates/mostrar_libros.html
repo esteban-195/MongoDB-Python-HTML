@@ -8,6 +8,16 @@
 </head>
 <body class="container py-5">
     <h1 class="text-center mb-4">Libros Disponibles</h1>
+
+    <!-- Buscador -->
+    <form action="{{ url_for('mostrar_libros') }}" method="GET" class="mb-4">
+        <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Buscar por título, autor o ISBN" value="{{ request.args.get('q', '') }}">
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </div>
+    </form>
+
+    <!-- Tabla de libros -->
     <table class="table table-striped">
         <thead>
             <tr>
@@ -28,6 +38,7 @@
             {% endfor %}
         </tbody>
     </table>
+
     <div class="text-center mt-4">
         <a href="/" class="btn btn-primary">Volver al Inicio</a>
     </div>

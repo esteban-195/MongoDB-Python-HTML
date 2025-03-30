@@ -1,0 +1,40 @@
+[{
+  "_id": "01",
+  "nombre": "Juan Pérez",
+  "email": "juan@example.com",
+  "telefono": "555-1234",
+  "prestamos_activos": [
+    {
+      "historial_prestamo_id": "0001",
+      "libro_id": "100",
+      "ejemplar_id": "0103",
+      "libro": "Cien años de soledad",
+      "fecha_prestamo": "2025-03-02",
+      "fecha_devolucion": "2025-03-16"
+    }
+  ],
+  "reservas_activas": [
+    {
+      "reserva_id": "50",
+      "libro": "50 sombras de gray",
+      "fecha_reserva": "2025-03-01",
+      "expira": "2025-03-03"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67da60357293cf2b5824c90a"
+  },
+  "nombre": "Vero",
+  "email": "vero@vero.com",
+  "telefono": "321"
+},
+{
+  "_id": {
+    "$oid": "67e889d29f335031adbaaa2d"
+  },
+  "nombre": "Lucho",
+  "email": "vero@vero.com",
+  "telefono": "456-564-7895"
+}]

@@ -1,0 +1,254 @@
+[{
+  "_id": "100",
+  "titulo": "Cien años de soledad",
+  "autor": "Gabo",
+  "isbn": "978-84-376-0494-7",
+  "cantidad_ejemplares": 5,
+  "ejemplares_disponibles": 5,
+  "ejemplar": [
+    {
+      "_id": "0101",
+      "book_id": "100",
+      "estado": "available",
+      "ubicacion": "Estantería A3"
+    },
+    {
+      "_id": "0102",
+      "book_id": "100",
+      "estado": "available",
+      "ubicacion": "Estantería A3"
+    },
+    {
+      "_id": "0103",
+      "book_id": "100",
+      "estado": "available",
+      "ubicacion": "Estantería A3"
+    },
+    {
+      "_id": "0104",
+      "book_id": "100",
+      "estado": "available",
+      "ubicacion": "Estantería A3"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67da5e10f9d8a12c6dad71f0"
+  },
+  "titulo": "Cementerio de animales",
+  "autor": "Stephen King",
+  "isbn": "0-8862-2799-2",
+  "cantidad_ejemplares": 6,
+  "ejemplares_disponibles": 6
+},
+{
+  "_id": {
+    "$oid": "67da5e54f9d8a12c6dad71f1"
+  },
+  "titulo": "Damian",
+  "autor": "Vero",
+  "isbn": "no me acuerdo",
+  "cantidad_ejemplares": -1,
+  "ejemplares_disponibles": 2
+},
+{
+  "_id": {
+    "$oid": "67db072dcc1cf2e72737d9ee"
+  },
+  "titulo": "La hojarasca",
+  "autor": "Gabriel García Márquez",
+  "isbn": "0-8862-2799-2",
+  "cantidad_ejemplares": 3,
+  "ejemplares_disponibles": 3
+},
+{
+  "_id": {
+    "$oid": "67db07d1cc1cf2e72737d9ef"
+  },
+  "titulo": "50 sombras de gray",
+  "autor": "Erika Leonard Mitchell",
+  "isbn": "0-3735-9272-8",
+  "cantidad_ejemplares": 8,
+  "ejemplares_disponibles": 8
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9e6"
+  },
+  "titulo": "1984",
+  "autor": "George Orwell",
+  "isbn": "9780451524935",
+  "cantidad_ejemplares": 10
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9e7"
+  },
+  "titulo": "Matar a un ruiseñor",
+  "autor": "Harper Lee",
+  "isbn": "9780061120084",
+  "cantidad_ejemplares": 8
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9e8"
+  },
+  "titulo": "El Gran Gatsby",
+  "autor": "F. Scott Fitzgerald",
+  "isbn": "9780743273565",
+  "cantidad_ejemplares": 5
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9e9"
+  },
+  "titulo": "Crónica de una muerte anunciada",
+  "autor": "Gabriel García Márquez",
+  "isbn": "9780307475804",
+  "cantidad_ejemplares": 6
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9ea"
+  },
+  "titulo": "El retrato de Dorian Gray",
+  "autor": "Oscar Wilde",
+  "isbn": "9780141439570",
+  "cantidad_ejemplares": 7
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9eb"
+  },
+  "titulo": "Orgullo y prejuicio",
+  "autor": "Jane Austen",
+  "isbn": "9780141439518",
+  "cantidad_ejemplares": 9
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9ec"
+  },
+  "titulo": "Don Quijote de la Mancha",
+  "autor": "Miguel de Cervantes",
+  "isbn": "9788491050463",
+  "cantidad_ejemplares": 11
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9ed"
+  },
+  "titulo": "Rayuela",
+  "autor": "Julio Cortázar",
+  "isbn": "9788420471839",
+  "cantidad_ejemplares": 4
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9ee"
+  },
+  "titulo": "Fahrenheit 451",
+  "autor": "Ray Bradbury",
+  "isbn": "9781451673319",
+  "cantidad_ejemplares": 12
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9ef"
+  },
+  "titulo": "Los miserables",
+  "autor": "Victor Hugo",
+  "isbn": "9782070408522",
+  "cantidad_ejemplares": 6
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f0"
+  },
+  "titulo": "Ulises",
+  "autor": "James Joyce",
+  "isbn": "9780679722762",
+  "cantidad_ejemplares": 3
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f1"
+  },
+  "titulo": "Las uvas de la ira",
+  "autor": "John Steinbeck",
+  "isbn": "9780143039433",
+  "cantidad_ejemplares": 8
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f2"
+  },
+  "titulo": "La metamorfosis",
+  "autor": "Franz Kafka",
+  "isbn": "9780141049427",
+  "cantidad_ejemplares": 10
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f3"
+  },
+  "titulo": "En busca del tiempo perdido",
+  "autor": "Marcel Proust",
+  "isbn": "9780142437964",
+  "cantidad_ejemplares": 2
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f4"
+  },
+  "titulo": "Los hermanos Karamazov",
+  "autor": "Fiódor Dostoyevski",
+  "isbn": "9780140449242",
+  "cantidad_ejemplares": 5
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f5"
+  },
+  "titulo": "Guerra y paz",
+  "autor": "León Tolstói",
+  "isbn": "9780143039990",
+  "cantidad_ejemplares": 7
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f6"
+  },
+  "titulo": "El extranjero",
+  "autor": "Albert Camus",
+  "isbn": "9780679720201",
+  "cantidad_ejemplares": 9
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f7"
+  },
+  "titulo": "Moby Dick",
+  "autor": "Herman Melville",
+  "isbn": "9780142437247",
+  "cantidad_ejemplares": 4
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f8"
+  },
+  "titulo": "La isla del tesoro",
+  "autor": "Robert Louis Stevenson",
+  "isbn": "9780141321004",
+  "cantidad_ejemplares": 6
+},
+{
+  "_id": {
+    "$oid": "67e8de1fa91e84719628f9f9"
+  },
+  "titulo": "El perfume",
+  "autor": "Patrick Süskind",
+  "isbn": "9788497593797",
+  "cantidad_ejemplares": 8
+}]

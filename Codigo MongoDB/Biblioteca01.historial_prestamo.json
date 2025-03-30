@@ -1,0 +1,9 @@
+[{
+  "_id": "0001",
+  "usuario_id": "01",
+  "copy_id": "0103",
+  "libro": "Cien años de soledad",
+  "fecha_prestamo": "2025-03-02",
+  "fecha_devolucion": "2025-03-16",
+  "estado": "active"
+}]
