@@ -94,16 +94,16 @@ python app.py
 
 🖼️ **Diagrama de Casos de Uso**
 
-> ![Diagrama de Casos de Uso](statics/Diagrama_de_casos_de_uso.png)
+> ![Diagrama de Casos de Uso](statics/Diagrama-de-casos-de-uso.png)
 
 
 🖼️ **Diagrama de Clases**
 
-> ![Diagrama de Clases](statics/Diagrama_de_clases.png)
+> ![Diagrama de Clases](statics/Diagrama-de-clases.png)
 
 🖼️ **Diagrama de Entidad-Relación**
 
-> ![Diagrama de Clases](statics/Diagrama_Entidad-Relacion.png)
+> ![Diagrama de Clases](statics/Diagrama-Entidad-Relacion.png)
 ---
 
 ## 📌 Versionado de las Bases de Datos
